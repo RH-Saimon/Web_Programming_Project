@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b7b9bb;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: hsl(72, 33%, 24%);
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #6a6b57;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#cart, #invoice {
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}

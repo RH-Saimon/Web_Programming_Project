@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Online Shopping Cart</h2>
+
+    <div class="product">
+        <h3>Laptop - 50000 Tk</h3>
+        <button onclick="addToCart('Laptop', 50000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Mouse - 1000 Tk</h3>
+        <button onclick="addToCart('Mouse', 1000)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Keyboard - 2500 Tk</h3>
+        <button onclick="addToCart('Keyboard', 2500)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Monitor - 15000 Tk</h3>
+        <button onclick="addToCart('Monitor', 15000)">Add to Cart</button>
+    </div>
+
+    <h3>Shopping Cart</h3>
+
+    <div id="cart"></div>
+
+    <label>Discount Coupon:</label>
+    <input type="text" id="coupon" placeholder="Enter SAVE10">
+
+    <button onclick="checkout()">Checkout</button>
+
+    <div id="invoice"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

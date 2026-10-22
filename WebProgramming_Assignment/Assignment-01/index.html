@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Course Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>University Course Registration</h1>
+
+        <form id="registrationForm">
+
+            <label for="studentName">Student Name:</label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="studentId">Student ID:</label>
+
+            <input
+                type="text"
+                id="studentId"
+                placeholder="Enter 4-digit Student ID"
+                required
+            >
+
+            <h3>Select Courses</h3>
+
+            <p>Total Credit Hours: <span id="totalCredits">0</span></p>
+            
+            <label class="course">
+                <input type="checkbox" name="course" value="Java" data-credit="3">
+                Java — 3 Credits
+            </label>
+            <span>Credit Hours: 3</span>
+
+            <label class="course">
+                <input type="checkbox" name="course" value="Database" data-credit="3">
+                Database — 3 Credits
+            </label>
+            <span>Credit Hours: 3</span>
+
+            <label class="course">
+                <input type="checkbox" name="course" value="AI" data-credit="4">
+                AI — 4 Credits
+            </label>
+            <span>Credit Hours: 4</span>
+
+            <label class="course">
+                <input type="checkbox" name="course" value="Networking" data-credit="3">
+                Networking — 3 Credits
+            </label>
+            <span>Credit Hours: 3</span>
+
+            <label class="course">
+                <input type="checkbox" name="course" value="Web Engineering" data-credit="3">
+                Web Engineering — 3 Credits
+            </label>
+            <span>Credit Hours: 3</span>
+
+            <button type="submit">Register Courses</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
