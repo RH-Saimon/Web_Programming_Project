@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Ticket Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Bus Ticket Reservation System</h1>
+
+    <div class="container">
+
+        <label>Passenger Name:</label>
+        <input type="text" id="passengerName" placeholder="Enter your name">
+
+        <br><br>
+
+        <label>Destination:</label>
+        <select id="destination">
+            <option value="">Select Destination</option>
+            <option value="Dhaka">Dhaka - 500 Tk</option>
+            <option value="Chittagong">Chittagong - 800 Tk</option>
+            <option value="Sylhet">Sylhet - 700 Tk</option>
+            <option value="Rajshahi">Rajshahi - 600 Tk</option>
+        </select>
+
+        <br><br>
+
+        <label>Number of Seats:</label>
+        <input type="number" id="seats" min="1" placeholder="Enter seats">
+
+        <br><br>
+
+        <label>Passenger Type:</label>
+        <select id="passengerType">
+            <option value="normal">Normal</option>
+            <option value="child">Child (50% Discount)</option>
+            <option value="student">Student (15% Discount)</option>
+            <option value="senior">Senior Citizen (20% Discount)</option>
+        </select>
+
+        <br><br>
+
+        <button onclick="calculateFare()">Calculate Fare</button>
+
+        <div id="result"></div>
+
+        <h3>Available Seats: <span id="availableSeats">40</span></h3>
+
+        <button onclick="bookTicket()">Book Ticket</button>
+
+        <div id="ticket"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

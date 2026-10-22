@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(241, 231, 231, 0.76);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color:  rgb(99, 90, 41);
+}
+
+.container {
+    background-color: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menu-item {
+    background-color: #f2f2f2;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+button{
+    background-color: rgb(105, 77, 39);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(90, 73, 40);
+    color: white;
+}
+
+input{
+    width: 50px;
+    padding: 5px;
+}
+
+.summery {
+    text-align: right;
+    margin-top: 25px;
+}
+
+.summary h2 {
+    color: green;
+}
+
+.remove-btn {
+    background-color: rgb(122, 47, 47);
+}
+
+.remove-btn:hover {
+    background-color: rgb(109, 27, 27);
+}
+
+#invoice {
+    margin-top: 20px;
+    text-align: left;
+}
+
+@media print {
+
+    body {
+        background-color: white;
+        padding: 0;
+    }
+
+    h1,
+    .menu,
+    .container > h2:first-of-type,
+    .container > h2:nth-of-type(2),
+    .summary button,
+    .remove-btn,
+    .menu-item button {
+        display: none;
+    }
+
+    .container {
+        box-shadow: none;
+        max-width: 100%;
+    }
+
+    input {
+        border: none;
+    }
+}

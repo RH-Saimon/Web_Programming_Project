@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant POS System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Restaurant POS System</h1>
+
+    <div class="container">
+
+        <h2>Restaurant Menu</h2>
+
+        <div class="menu">
+
+            <div class="menu-item">
+                <h3>Burger</h3>
+                <p>Price: 250 Tk</p>
+                <button onclick="addItem('Burger')">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Pizza</h3>
+                <p>Price: 800 Tk</p>
+                <button onclick="addItem('Pizza')">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Fried Rice</h3>
+                <p>Price: 350 Tk</p>
+                <button onclick="addItem('Fried Rice')">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Coffee</h3>
+                <p>Price: 120 Tk</p>
+                <button onclick="addItem('Coffee')">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Soft Drink</h3>
+                <p>Price: 50 Tk</p>
+                <button onclick="addItem('Soft Drink')">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <h2>Shopping Cart</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price (Tk)</th>
+                    <th>Quantity</th>
+                    <th>Total (Tk)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="cartItems"></tbody>
+        </table>
+
+        <div class="summary">
+
+            <p>Subtotal: <span id="subtotal">0</span> Tk</p>
+
+            <p>VAT (15%): <span id="vat">0</span> Tk</p>
+
+            <p>Service Charge (5%): <span id="serviceCharge">0</span> Tk</p>
+
+            <h2>Grand Total: <span id="grandTotal">0</span> Tk</h2>
+
+            <button onclick="printInvoice()">Print Invoice</button>
+
+        </div>
+
+        <div id="invoice"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

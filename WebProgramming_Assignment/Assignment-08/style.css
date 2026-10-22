@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dedfe0;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(74, 107, 49);
+}
+
+.container {
+    background-color: rgb(209, 207, 207);
+    width: 400px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+label {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+}
+
+input, select {
+    width: 180px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(70, 70, 117);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+#result, #ticket {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+#ticket {
+    background-color: #e8f5e9;
+    border: 1px solid rgb(80, 107, 83);
+}

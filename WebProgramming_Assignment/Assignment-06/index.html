@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking Transaction Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Banking Transaction Dashboard</h2>
+
+    <h3>Current Balance: ৳<span id="balance">1000</span></h3>
+
+    <hr>
+
+    <h3>Deposit Money</h3>
+
+    <input type="number" id="depositAmount" placeholder="Enter amount">
+
+    <button onclick="deposit()">Deposit</button>
+
+    <hr>
+
+    <h3>Withdraw Money</h3>
+
+    <input type="number" id="withdrawAmount" placeholder="Enter amount">
+
+    <button onclick="withdraw()">Withdraw</button>
+
+    <hr>
+
+    <h3>Transaction History</h3>
+
+    <div id="history"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
